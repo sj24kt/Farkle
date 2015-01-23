@@ -1,4 +1,4 @@
-//
+    //
 //  DieLabel.m
 //  Farkle
 //
@@ -11,20 +11,15 @@
 @implementation DieLabel
 
 -(void)roll {
-    int randomTimeInSeconds = arc4random_uniform(4) + 1;
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(randomTimeInSeconds * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        int randomNumber = arc4random_uniform(6) + 1;
-        NSLog(@"This dieLabel is: %d", randomNumber);
-
-        [self.delegate dieRolledWithValue:randomNumber];
-        self.text = [NSString stringWithFormat:@"%d", randomNumber];
-    });
+    int randomNumber = arc4random_uniform(6) + 1;
+    self.text = [NSString stringWithFormat:@"%i", randomNumber];
+    
 }
 
 -(IBAction)onTapped:(UITapGestureRecognizer *)sender {
+    NSLog(@"enter onTapped");
     self.backgroundColor = [UIColor greenColor];
-    [self.delegate didChooseDie:self];
-
+    [self.delegate dieLabelWasTapped:self];
 }
 
 @end

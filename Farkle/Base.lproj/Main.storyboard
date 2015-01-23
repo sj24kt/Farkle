@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="arO-46-5Bh">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="arO-46-5Bh">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
+        <!--Farkle-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="RootViewController" sceneMemberID="viewController">
@@ -13,311 +14,212 @@
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gga-hM-lC2" userLabel="Tap Gesture Recognizer (1)" customClass="DieLabel">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gga-hM-lC2" userLabel="Tap Gesture Recognizer (1)" customClass="DieLabel">
+                                <rect key="frame" x="88" y="163" width="50" height="50"/>
                                 <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <gestureRecognizers/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="56" id="JzA-Rg-h78"/>
-                                    <constraint firstAttribute="width" constant="56" id="a23-B3-ayG"/>
+                                    <constraint firstAttribute="height" constant="50" id="JzA-Rg-h78"/>
+                                    <constraint firstAttribute="width" constant="50" id="a23-B3-ayG"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="JzA-Rg-h78"/>
-                                        <exclude reference="a23-B3-ayG"/>
-                                    </mask>
-                                </variation>
-                                <variation key="widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="JzA-Rg-h78"/>
-                                        <include reference="a23-B3-ayG"/>
-                                    </mask>
-                                </variation>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="l2U-FX-4n3" appends="YES" id="EUg-3u-jj6"/>
                                 </connections>
                             </label>
-                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qAm-lj-obh" userLabel="Tap Gesture Recognizer (2)" customClass="DieLabel">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qAm-lj-obh" userLabel="Tap Gesture Recognizer (2)" customClass="DieLabel">
+                                <rect key="frame" x="182" y="163" width="50" height="50"/>
                                 <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <gestureRecognizers/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="56" id="kaD-5G-9eH"/>
-                                    <constraint firstAttribute="width" constant="56" id="vzk-2j-q0h"/>
+                                    <constraint firstAttribute="height" constant="50" id="kaD-5G-9eH"/>
+                                    <constraint firstAttribute="width" constant="50" id="vzk-2j-q0h"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="kaD-5G-9eH"/>
-                                        <exclude reference="vzk-2j-q0h"/>
-                                    </mask>
-                                </variation>
-                                <variation key="widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="kaD-5G-9eH"/>
-                                        <include reference="vzk-2j-q0h"/>
-                                    </mask>
-                                </variation>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="6Or-lO-sLG" appends="YES" id="gt2-sM-FB5"/>
                                 </connections>
                             </label>
-                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GJq-wK-sne" userLabel="Tap Gesture Recognizer (3)" customClass="DieLabel">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GJq-wK-sne" userLabel="Tap Gesture Recognizer (3)" customClass="DieLabel">
+                                <rect key="frame" x="88" y="233" width="50" height="50"/>
                                 <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <gestureRecognizers/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="56" id="Rpe-kg-cUt"/>
-                                    <constraint firstAttribute="height" constant="56" id="bWS-hV-uxc"/>
+                                    <constraint firstAttribute="width" constant="50" id="Rpe-kg-cUt"/>
+                                    <constraint firstAttribute="height" constant="50" id="bWS-hV-uxc"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="Rpe-kg-cUt"/>
-                                        <exclude reference="bWS-hV-uxc"/>
-                                    </mask>
-                                </variation>
-                                <variation key="widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="Rpe-kg-cUt"/>
-                                        <include reference="bWS-hV-uxc"/>
-                                    </mask>
-                                </variation>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="heQ-MZ-G7i" appends="YES" id="upP-6h-ALh"/>
                                 </connections>
                             </label>
-                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B0l-wL-gde" userLabel="Tap Gesture Recognizer (5)" customClass="DieLabel">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B0l-wL-gde" userLabel="Tap Gesture Recognizer (5)" customClass="DieLabel">
+                                <rect key="frame" x="182" y="233" width="50" height="50"/>
                                 <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <gestureRecognizers/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="56" id="41r-lN-sir"/>
-                                    <constraint firstAttribute="width" constant="56" id="w7V-YS-AJL"/>
+                                    <constraint firstAttribute="height" constant="50" id="41r-lN-sir"/>
+                                    <constraint firstAttribute="width" constant="50" id="w7V-YS-AJL"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="41r-lN-sir"/>
-                                        <exclude reference="w7V-YS-AJL"/>
-                                    </mask>
-                                </variation>
-                                <variation key="widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="41r-lN-sir"/>
-                                        <include reference="w7V-YS-AJL"/>
-                                    </mask>
-                                </variation>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="WKB-Lz-pOS" appends="YES" id="uLa-ER-tfX"/>
                                 </connections>
                             </label>
-                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p2c-oe-JEy" userLabel="Tap Gesture Recognizer (6)" customClass="DieLabel">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p2c-oe-JEy" userLabel="Tap Gesture Recognizer (6)" customClass="DieLabel">
+                                <rect key="frame" x="88" y="299" width="50" height="49"/>
                                 <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <gestureRecognizers/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="56" id="uss-mT-DUN"/>
-                                    <constraint firstAttribute="width" constant="56" id="xuf-Vf-DQd"/>
+                                    <constraint firstAttribute="height" constant="49" id="uss-mT-DUN"/>
+                                    <constraint firstAttribute="width" constant="50" id="xuf-Vf-DQd"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="uss-mT-DUN"/>
-                                        <exclude reference="xuf-Vf-DQd"/>
-                                    </mask>
-                                </variation>
-                                <variation key="widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="uss-mT-DUN"/>
-                                        <include reference="xuf-Vf-DQd"/>
-                                    </mask>
-                                </variation>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="YHg-LC-OKR" appends="YES" id="aCj-lP-LRb"/>
                                 </connections>
                             </label>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nm8-k1-AJK" userLabel="Tap Gesture Recognizer (4)" customClass="DieLabel">
+                                <rect key="frame" x="182" y="299" width="50" height="49"/>
+                                <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="dOz-Fy-pj8"/>
+                                    <constraint firstAttribute="height" constant="49" id="obA-W8-14p"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Vfh-zc-OYK" appends="YES" id="3Ao-ga-XIJ"/>
+                                </connections>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5xB-cZ-Qew">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <rect key="frame" x="88" y="365" width="144" height="40"/>
                                 <color key="backgroundColor" red="1" green="0.89616849899422035" blue="0.90908131219656729" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="55C-rS-caZ"/>
-                                    <constraint firstAttribute="width" constant="150" id="tEi-Jy-bFS"/>
+                                    <constraint firstAttribute="width" constant="144" id="tEi-Jy-bFS"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="Roll"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="55C-rS-caZ"/>
-                                        <exclude reference="tEi-Jy-bFS"/>
-                                    </mask>
-                                </variation>
-                                <variation key="widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="55C-rS-caZ"/>
-                                        <include reference="tEi-Jy-bFS"/>
-                                    </mask>
-                                </variation>
                                 <connections>
                                     <action selector="onRollButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="zdo-Jz-PWP"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="acL-rU-L3x">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <rect key="frame" x="90" y="422" width="144" height="40"/>
                                 <color key="backgroundColor" red="0.98431963209891882" green="0.87247480571227676" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="jeg-Eb-oaH"/>
+                                    <constraint firstAttribute="width" constant="144" id="jeg-Eb-oaH"/>
                                     <constraint firstAttribute="height" constant="40" id="ypt-Fp-62z"/>
                                 </constraints>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="End Turn">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="jeg-Eb-oaH"/>
-                                        <exclude reference="ypt-Fp-62z"/>
-                                    </mask>
-                                </variation>
-                                <variation key="widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="jeg-Eb-oaH"/>
-                                        <include reference="ypt-Fp-62z"/>
-                                    </mask>
-                                </variation>
+                                <connections>
+                                    <action selector="onEndTurnButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="EZO-dM-Yd4"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nm8-k1-AJK" userLabel="Tap Gesture Recognizer (4)" customClass="DieLabel">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
-                                <gestureRecognizers/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player:  " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NkL-eY-xJK">
+                                <rect key="frame" x="48" y="81" width="90" height="26"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="56" id="dOz-Fy-pj8"/>
-                                    <constraint firstAttribute="height" constant="56" id="obA-W8-14p"/>
+                                    <constraint firstAttribute="width" constant="90" id="4Zl-bk-HEU"/>
+                                    <constraint firstAttribute="height" constant="26" id="Onb-5m-PNL"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="dOz-Fy-pj8"/>
-                                        <exclude reference="obA-W8-14p"/>
-                                    </mask>
-                                </variation>
-                                <variation key="widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="dOz-Fy-pj8"/>
-                                        <include reference="obA-W8-14p"/>
-                                    </mask>
-                                </variation>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="Vfh-zc-OYK" appends="YES" id="3Ao-ga-XIJ"/>
-                                </connections>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Round:  " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k2U-kE-pZD">
+                                <rect key="frame" x="172" y="81" width="90" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="fXC-iQ-tNR"/>
+                                    <constraint firstAttribute="height" constant="26" id="lu6-af-OE7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score:  " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MmW-He-8HP">
+                                <rect key="frame" x="48" y="120" width="90" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="dZY-N8-56f"/>
+                                    <constraint firstAttribute="width" constant="90" id="lXI-nh-orc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bank:  " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q7I-0v-kdT">
+                                <rect key="frame" x="172" y="120" width="90" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="8RM-KN-qef"/>
+                                    <constraint firstAttribute="height" constant="26" id="XGe-5b-xyD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="5xB-cZ-Qew" secondAttribute="centerX" id="5tb-OJ-H5T"/>
-                            <constraint firstItem="5xB-cZ-Qew" firstAttribute="top" secondItem="B0l-wL-gde" secondAttribute="bottom" constant="30" id="6w4-Md-cCM"/>
-                            <constraint firstItem="B0l-wL-gde" firstAttribute="top" secondItem="GJq-wK-sne" secondAttribute="bottom" constant="26" id="8ux-a7-FR1"/>
-                            <constraint firstItem="nm8-k1-AJK" firstAttribute="top" secondItem="qAm-lj-obh" secondAttribute="bottom" constant="32" id="BsU-J3-mds"/>
-                            <constraint firstItem="nm8-k1-AJK" firstAttribute="leading" secondItem="GJq-wK-sne" secondAttribute="trailing" constant="38" id="H5n-17-SNL"/>
-                            <constraint firstItem="GJq-wK-sne" firstAttribute="leading" secondItem="B0l-wL-gde" secondAttribute="leading" id="Pe2-WK-khz"/>
-                            <constraint firstItem="acL-rU-L3x" firstAttribute="top" secondItem="5xB-cZ-Qew" secondAttribute="bottom" constant="21" id="RGr-dO-gxm"/>
-                            <constraint firstItem="acL-rU-L3x" firstAttribute="top" secondItem="5xB-cZ-Qew" secondAttribute="bottom" constant="21" id="Th3-CN-5pM"/>
+                            <constraint firstItem="5xB-cZ-Qew" firstAttribute="top" secondItem="B0l-wL-gde" secondAttribute="bottom" constant="82" id="6w4-Md-cCM"/>
+                            <constraint firstItem="B0l-wL-gde" firstAttribute="top" secondItem="GJq-wK-sne" secondAttribute="bottom" constant="-50" id="8ux-a7-FR1"/>
+                            <constraint firstItem="Q7I-0v-kdT" firstAttribute="leading" secondItem="MmW-He-8HP" secondAttribute="trailing" constant="34" id="AFe-Q5-O2G"/>
+                            <constraint firstItem="nm8-k1-AJK" firstAttribute="top" secondItem="qAm-lj-obh" secondAttribute="bottom" constant="86" id="BsU-J3-mds"/>
+                            <constraint firstItem="MmW-He-8HP" firstAttribute="top" secondItem="NkL-eY-xJK" secondAttribute="bottom" constant="13" id="DWT-W6-hJo"/>
+                            <constraint firstItem="nm8-k1-AJK" firstAttribute="leading" secondItem="GJq-wK-sne" secondAttribute="trailing" constant="44" id="H5n-17-SNL"/>
+                            <constraint firstItem="NkL-eY-xJK" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="17" id="LSz-Lz-ITy"/>
+                            <constraint firstItem="GJq-wK-sne" firstAttribute="leading" secondItem="B0l-wL-gde" secondAttribute="leading" constant="-94" id="Pe2-WK-khz"/>
+                            <constraint firstItem="acL-rU-L3x" firstAttribute="top" secondItem="5xB-cZ-Qew" secondAttribute="bottom" constant="17" id="RGr-dO-gxm"/>
+                            <constraint firstItem="acL-rU-L3x" firstAttribute="top" secondItem="5xB-cZ-Qew" secondAttribute="bottom" constant="17" id="Th3-CN-5pM"/>
+                            <constraint firstItem="k2U-kE-pZD" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="17" id="Vec-ku-efH"/>
                             <constraint firstItem="GJq-wK-sne" firstAttribute="leading" secondItem="Gga-hM-lC2" secondAttribute="leading" id="XbU-ze-AMc"/>
-                            <constraint firstItem="GJq-wK-sne" firstAttribute="top" secondItem="Gga-hM-lC2" secondAttribute="bottom" constant="32" id="bVZ-2r-cul"/>
-                            <constraint firstItem="nm8-k1-AJK" firstAttribute="leading" secondItem="GJq-wK-sne" secondAttribute="trailing" constant="38" id="bm1-D6-Jqx"/>
+                            <constraint firstItem="NkL-eY-xJK" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="32" id="YQU-Uf-xn5"/>
+                            <constraint firstItem="Q7I-0v-kdT" firstAttribute="top" secondItem="k2U-kE-pZD" secondAttribute="bottom" constant="13" id="abO-ZO-zSH"/>
+                            <constraint firstItem="GJq-wK-sne" firstAttribute="top" secondItem="Gga-hM-lC2" secondAttribute="bottom" constant="20" id="bVZ-2r-cul"/>
+                            <constraint firstItem="nm8-k1-AJK" firstAttribute="leading" secondItem="GJq-wK-sne" secondAttribute="trailing" constant="44" id="bm1-D6-Jqx"/>
                             <constraint firstItem="GJq-wK-sne" firstAttribute="leading" secondItem="5xB-cZ-Qew" secondAttribute="leading" id="fn1-OL-i0r"/>
-                            <constraint firstItem="nm8-k1-AJK" firstAttribute="top" secondItem="qAm-lj-obh" secondAttribute="bottom" constant="32" id="g9B-iE-4Rv"/>
-                            <constraint firstAttribute="centerX" secondItem="acL-rU-L3x" secondAttribute="centerX" id="mqH-fW-9s9"/>
-                            <constraint firstItem="Gga-hM-lC2" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="83" id="sia-wK-mb8"/>
-                            <constraint firstItem="p2c-oe-JEy" firstAttribute="leading" secondItem="B0l-wL-gde" secondAttribute="trailing" constant="38" id="t3h-Fr-R6W"/>
-                            <constraint firstItem="p2c-oe-JEy" firstAttribute="top" secondItem="nm8-k1-AJK" secondAttribute="bottom" constant="26" id="tbY-yt-qmo"/>
-                            <constraint firstItem="qAm-lj-obh" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="83" id="wnM-43-YWg"/>
-                            <constraint firstItem="qAm-lj-obh" firstAttribute="leading" secondItem="Gga-hM-lC2" secondAttribute="trailing" constant="38" id="xKf-Vl-Wf9"/>
+                            <constraint firstItem="nm8-k1-AJK" firstAttribute="top" secondItem="qAm-lj-obh" secondAttribute="bottom" constant="86" id="g9B-iE-4Rv"/>
+                            <constraint firstItem="MmW-He-8HP" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="32" id="ilD-z1-pvg"/>
+                            <constraint firstItem="k2U-kE-pZD" firstAttribute="leading" secondItem="NkL-eY-xJK" secondAttribute="trailing" constant="34" id="lp3-tz-7LD"/>
+                            <constraint firstAttribute="centerX" secondItem="acL-rU-L3x" secondAttribute="centerX" constant="-2" id="mqH-fW-9s9"/>
+                            <constraint firstItem="Gga-hM-lC2" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="99" id="sia-wK-mb8"/>
+                            <constraint firstItem="p2c-oe-JEy" firstAttribute="leading" secondItem="B0l-wL-gde" secondAttribute="trailing" constant="-144" id="t3h-Fr-R6W"/>
+                            <constraint firstItem="p2c-oe-JEy" firstAttribute="top" secondItem="nm8-k1-AJK" secondAttribute="bottom" constant="-49" id="tbY-yt-qmo"/>
+                            <constraint firstItem="qAm-lj-obh" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="99" id="wnM-43-YWg"/>
+                            <constraint firstItem="qAm-lj-obh" firstAttribute="leading" secondItem="Gga-hM-lC2" secondAttribute="trailing" constant="44" id="xKf-Vl-Wf9"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="Gga-hM-lC2"/>
-                                <exclude reference="qAm-lj-obh"/>
-                                <exclude reference="GJq-wK-sne"/>
-                                <exclude reference="B0l-wL-gde"/>
-                                <exclude reference="p2c-oe-JEy"/>
-                                <exclude reference="5xB-cZ-Qew"/>
-                                <exclude reference="acL-rU-L3x"/>
-                                <exclude reference="nm8-k1-AJK"/>
-                            </mask>
-                            <mask key="constraints">
-                                <exclude reference="8ux-a7-FR1"/>
-                                <exclude reference="Pe2-WK-khz"/>
-                                <exclude reference="XbU-ze-AMc"/>
-                                <exclude reference="bVZ-2r-cul"/>
-                                <exclude reference="fn1-OL-i0r"/>
-                                <exclude reference="sia-wK-mb8"/>
-                                <exclude reference="BsU-J3-mds"/>
-                                <exclude reference="H5n-17-SNL"/>
-                                <exclude reference="bm1-D6-Jqx"/>
-                                <exclude reference="g9B-iE-4Rv"/>
-                                <exclude reference="t3h-Fr-R6W"/>
-                                <exclude reference="tbY-yt-qmo"/>
-                                <exclude reference="wnM-43-YWg"/>
-                                <exclude reference="xKf-Vl-Wf9"/>
-                                <exclude reference="5tb-OJ-H5T"/>
-                                <exclude reference="6w4-Md-cCM"/>
-                                <exclude reference="RGr-dO-gxm"/>
-                                <exclude reference="Th3-CN-5pM"/>
-                                <exclude reference="mqH-fW-9s9"/>
-                            </mask>
-                        </variation>
-                        <variation key="widthClass=compact">
-                            <mask key="subviews">
-                                <include reference="Gga-hM-lC2"/>
-                                <include reference="qAm-lj-obh"/>
-                                <include reference="GJq-wK-sne"/>
-                                <include reference="B0l-wL-gde"/>
-                                <include reference="p2c-oe-JEy"/>
-                                <include reference="5xB-cZ-Qew"/>
-                                <include reference="acL-rU-L3x"/>
-                                <include reference="nm8-k1-AJK"/>
-                            </mask>
-                            <mask key="constraints">
-                                <include reference="8ux-a7-FR1"/>
-                                <include reference="Pe2-WK-khz"/>
-                                <include reference="XbU-ze-AMc"/>
-                                <include reference="bVZ-2r-cul"/>
-                                <include reference="fn1-OL-i0r"/>
-                                <include reference="sia-wK-mb8"/>
-                                <include reference="BsU-J3-mds"/>
-                                <include reference="H5n-17-SNL"/>
-                                <include reference="bm1-D6-Jqx"/>
-                                <include reference="g9B-iE-4Rv"/>
-                                <include reference="t3h-Fr-R6W"/>
-                                <include reference="tbY-yt-qmo"/>
-                                <include reference="wnM-43-YWg"/>
-                                <include reference="xKf-Vl-Wf9"/>
-                                <include reference="5tb-OJ-H5T"/>
-                                <include reference="6w4-Md-cCM"/>
-                                <include reference="RGr-dO-gxm"/>
-                                <include reference="Th3-CN-5pM"/>
-                                <include reference="mqH-fW-9s9"/>
-                            </mask>
-                        </variation>
                     </view>
-                    <navigationItem key="navigationItem" id="XsF-xv-IeT"/>
+                    <navigationItem key="navigationItem" title="Farkle" id="XsF-xv-IeT"/>
                     <connections>
+                        <outlet property="bankScoreLabel" destination="Q7I-0v-kdT" id="Hj8-wu-3hz"/>
+                        <outlet property="currentScoreLabel" destination="MmW-He-8HP" id="oWw-2D-nOY"/>
+                        <outlet property="dieFive" destination="p2c-oe-JEy" id="4kI-RY-UHq"/>
+                        <outlet property="dieFour" destination="B0l-wL-gde" id="JUh-vh-exl"/>
+                        <outlet property="dieOne" destination="Gga-hM-lC2" id="DnW-hn-q40"/>
+                        <outlet property="dieSix" destination="nm8-k1-AJK" id="vam-pK-YKw"/>
+                        <outlet property="dieThree" destination="GJq-wK-sne" id="aYX-Gx-qDv"/>
+                        <outlet property="dieTwo" destination="qAm-lj-obh" id="JNG-pE-mL2"/>
+                        <outlet property="doneButton" destination="acL-rU-L3x" id="QBF-9y-YHM"/>
+                        <outlet property="playerLabel" destination="NkL-eY-xJK" id="S8h-Nn-lwi"/>
+                        <outlet property="rollButton" destination="5xB-cZ-Qew" id="hsj-u7-aGH"/>
+                        <outlet property="roundLabel" destination="k2U-kE-pZD" id="nvX-fX-2gD"/>
                         <outletCollection property="labelCollection" destination="Gga-hM-lC2" collectionClass="NSMutableArray" id="cdw-iy-4Sh"/>
                         <outletCollection property="labelCollection" destination="qAm-lj-obh" collectionClass="NSMutableArray" id="0kG-0R-nap"/>
                         <outletCollection property="labelCollection" destination="GJq-wK-sne" collectionClass="NSMutableArray" id="Efb-ii-TfX"/>
@@ -358,7 +260,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="792" y="-368"/>
+            <point key="canvasLocation" x="422" y="-349"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="6nw-QQ-DFg">
@@ -376,7 +278,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8kW-ah-Bh5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="-368"/>
+            <point key="canvasLocation" x="40" y="-348.37333333333333"/>
         </scene>
     </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
 </document>
